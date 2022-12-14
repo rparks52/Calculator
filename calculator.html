@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js"></script>
+    <title>Calculator | rparks52</title>
+</head>
+<body>
+    <div class="grid-container" id="calculator">
+        <div id="viewspace">
+            <input id="viewspace-value" data-value="0" type="number">
+        </div>
+        <div id="calculator-btns">
+            <div id="row-1-btns">
+                <button class="grid-item top-btn" id="clear">AC</button>
+                <button class="grid-item top-btn" id="change-polarity" data-value="add">+/-</button>
+                <button class="grid-item top-btn" id="percent" data-value="percent">%</button>
+                <button class="grid-item operator-btn" id="divide" data-value="divide">÷</button>
+            </div>
+            <div id="row-2-btns">
+                <button class="grid-item numerical-btn" id="7" data-value="7">7</button>
+                <button class="grid-item numerical-btn" id="8" data-value="8">8</button>
+                <button class="grid-item numerical-btn" id="9" data-value="9">9</button>
+                <button class="grid-item operator-btn" id="multiply" data-value="multiply">X</button>
+            </div>
+            <div id="row-3-btns">
+                <button class="grid-item numerical-btn" id="4" data-value="4">4</button>
+                <button class="grid-item numerical-btn" id="5" data-value="5">5</button>
+                <button class="grid-item numerical-btn" id="6" data-value="6">6</button>
+                <button class="grid-item operator-btn" id="subtract" data-value="subtract">-</button>
+            </div>
+            <div id="row-4-btns">
+                <button class="grid-item numerical-btn" id="1" data-value="1">1</button>
+                <button class="grid-item numerical-btn" id="2" data-value="2">2</button>
+                <button class="grid-item numerical-btn" id="3" data-value="3">3</button>
+                <button class="grid-item operator-btn" id="add" data-value="add">+</button>
+            </div>
+            <div id="row-5-btns">
+               <button class="grid-item numerical-btn" id="zero-btn" data-value="0">0</button>
+                <button class="grid-item numerical-btn" id="decimal" data-value=".">.</button>
+                <button class="grid-item equals" id="equals">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
