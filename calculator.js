@@ -21,14 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Operation: " + operation);
     cleanNumbers(num1, num2);
     if (phase_2) {
-      if (operation === "add") {
-        add();
-      } else if (operation === "subtract") {
-        subtract();
-      } else if (operation === "multiply") {
-        multiply();
-      } else if (operation === "divide") {
-        divide();
+      switch (operation) {
+        case "add":
+          add();
+          break;
+        case "subtract":
+          subtract();
+          break;
+        case "multiply":
+          multiply();
+          break;
+        case "divide":
+          divide();
       }
       console.log(result);
       viewspace.innerHTML = result.toLocaleString();
